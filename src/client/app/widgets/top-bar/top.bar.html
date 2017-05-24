@@ -1,6 +1,14 @@
 <header id="container_topbar">
+    
+    <nav id="connexion">
+        <form>
+        <label for="nom">mail :</label><input type="text" ng-model="newUser.nom" id="nom" />
+        <label for="prenom">mot de passe :</label><input type="text" ng-model="newUser.prenom" id="prenom" />
+        <!-- <i class="icon-check-sign"></i> -->
+        <input type="button" name="valid" value="OK" />
+        </form>
+    </nav>
     <h1>MeetUnit</h1>
-
     <nav id="main_menu">
         <ul>
             <li><a ng-class="vm.active == 'Accueil' ? 'active' : 'draw'" ng-href="">Accueil</a></li>
@@ -8,6 +16,8 @@
             <li><a ng-class="vm.active == 'News' ? 'active' : 'draw'" ng-href="#/sorties/2">News</a></li>
             <li><a ng-class="vm.active == 'Membres' ? 'active' : 'draw'" href="">Membres</a></li>
             <li><a ng-class="vm.active == 'Account' ? 'active' : 'draw'" href="#/users/1">Mon compte</a></li>
+            <li><a ng-class="vm.active == 'Connexion' ? 'active' : 'draw'" ng-href="#/connexion/creationCompte">Inscription</a></li>
         </ul>
     </nav>
 </header>
+

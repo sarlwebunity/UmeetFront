@@ -1,0 +1,12 @@
+<top-bar active="Connexion"></top-bar>
+<div class="connexionForm">
+	<form id="form">
+		<label for="nom">Nom :</label><input type="text" ng-model="newUser.nom" id="nom" /><br />
+		<label for="prenom">Prénom :</label><input type="text" ng-model="newUser.prenom" id="prenom" /><br />
+		<label for="date_birth">date de naissance :</label><input type="text" ng-model="newUser.date_birth" id="date_birth" /><br />
+		<label for="mail">mail</label><input type="text" ng-model="newUser.mail" id="mail" /><br />
+		<label for="pass">mot de passe</label><input type="password" ng-model="newUser.pass" id="pass" /><br />
+		<label for="passV">Confirmer le mot de passe</label><input type="password" ng-model="newUser.passV" id="passV" /><br />
+		<input type="submit" name="valider" value="s'inscrire" />
+	</form>
+</div>

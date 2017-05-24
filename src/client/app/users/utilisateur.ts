@@ -4,13 +4,22 @@ namespace app.users {
 
     export class Utilisateur {
 
-        id:number;
-        pseudo:string;
+        id:         number;
+        nom:        string;
+        prenom:     string;
+        date_birth: string;
+        mail:       string;
+        pass:       string;
+        passV:      string;
 
         /* @ngInject */
-        constructor(id:number, pseudo:string) {
+        constructor(id:number, nom:string,prenom:string,date_birth:string,mail:string,pass:string,passV:string) {
             this.id=id;
-            this.pseudo=pseudo;
+            this.nom = nom;
+            this.prenom = prenom;
+            this.date_birth = date_birth;
+            this.pass = pass;
+            this.passV = passV;
         }
 
     }
