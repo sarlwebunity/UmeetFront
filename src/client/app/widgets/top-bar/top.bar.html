@@ -8,6 +8,13 @@
             <li><a ng-class="vm.active == 'News' ? 'active' : 'draw'" ng-href="#/sorties/2">News</a></li>
             <li><a ng-class="vm.active == 'Membres' ? 'active' : 'draw'" href="">Membres</a></li>
             <li><a ng-class="vm.active == 'Account' ? 'active' : 'draw'" href="#/users/1">Mon compte</a></li>
+            <!-- <li><a ng-class="vm.active == 'Connexion' ? 'active' : 'draw'" href="#/connexion">Connexion</a></li> -->
+            <li><button ng-click="open()" class="btn btn-primary">Test Modal</button></li>
         </ul>
     </nav>
+    <modal title="Login form" visible="showModal">
+        <form role="form">
+        coucou
+        </form>
+      </modal>
 </header>
