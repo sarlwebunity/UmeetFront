@@ -12,5 +12,5 @@ namespace app.widgets.footer {
 
     angular
         .module('app.widgets.footer')
-        .component('footer', new footer());
+        .component('footerWidget', new footer());
 }
