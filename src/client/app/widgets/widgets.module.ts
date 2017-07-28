@@ -6,6 +6,7 @@ module app.widgets {
       'app.widgets.topbar',
       'app.widgets.footer',
       'app.widgets.menu',
-      'app.widgets.icone'
+      'app.widgets.icone',
+      'app.widgets.modal'
   ]);
 }

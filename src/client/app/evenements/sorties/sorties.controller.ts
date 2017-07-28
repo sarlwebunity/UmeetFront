@@ -8,29 +8,42 @@ namespace app.evenements.sorties {
 
         sorties: Array<Sortie> = [];
 
+        isCollapsed: boolean = true;
+
         /* @ngInject */
-        constructor(private $state, private SortiesService: ISortiesService) {
+        constructor(private $state, private SortiesService: ISortiesService, private $uibModal) {
             this.getSorties();
         }
 
-        getSorties(){
+        getSorties() {
             let self = this;
-            this.SortiesService.getSorties().then(function (sort){
+            this.SortiesService.getSorties().then(function (sort) {
                 //On récupère la sortie
                 self.sorties = sort;
             })
         }
 
-        goToSortie(id:number){
+        goToSortie(id: number) {
             this.$state.go('home.evenements.sortie', {"id": id});
         }
 
-        goToUserProfile(id:number){
+        goToUserProfile(id: number) {
             this.$state.go('home.users.profile', {"id": id});
         }
 
-    }
+        openComponentModal() {
+            var modalInstance = this.$uibModal.open({
+                animation: true,
+                component: 'modal',
+                resolve: {
+                    items: function () {
+                        return ['item1', 'item2', 'item3'];
+                    }
+                }
+            });
 
+        }
+    }
     angular
         .module('app.evenements.sorties')
         .controller('SortiesController', SortiesController);
