@@ -1,8 +1,6 @@
-.idea/*
-bower_components
+<<<<<<< HEAD
+.idea/
+.tmp/
+bower_components/
 node_modules/
-.tmp
- package-lock.json
-_targetJS
-index.html
-package-lock.json
+_targetJS/

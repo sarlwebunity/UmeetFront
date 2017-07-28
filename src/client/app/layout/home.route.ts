@@ -21,7 +21,7 @@ namespace app.layout {
                 config: {
                     url: '/',
                     abstract: true,
-                    templateUrl: 'app/layout/shell.html',
+                    templateUrl: 'app/layout/main.html',
                     controller: 'ShellController',
                     controllerAs: 'vm',
                     settings: {},

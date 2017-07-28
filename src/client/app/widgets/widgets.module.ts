@@ -3,6 +3,10 @@ module app.widgets {
 
   angular.module('app.widgets', [
       'app.widgets.formprogressbar',
-      'app.widgets.topbar'
+      'app.widgets.topbar',
+      'app.widgets.footer',
+      'app.widgets.menu',
+      'app.widgets.icone',
+      'app.widgets.modal'
   ]);
 }
