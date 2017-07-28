@@ -7,5 +7,6 @@ namespace app {
         'app.layout',
         'app.evenements',
         'app.users',
+        'app.connexion',
     ]);
 }
