@@ -3,7 +3,6 @@ namespace app.widgets.menu {
     export class Menu implements ng.IComponentOptions {
 
         public bindings:{ [binding:string]:string} = {
-            active: '@',
         };
         public controller:Function = MenuCtrl;
         public controllerAs:string = 'vm';
