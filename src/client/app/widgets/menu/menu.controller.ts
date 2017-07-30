@@ -5,7 +5,7 @@ namespace app.widgets.menu {
     }
 
     export class MenuCtrl implements IMenuCtrl {
-
+        
         /* @ngInject */
         constructor() {
         }

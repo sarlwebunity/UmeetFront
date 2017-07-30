@@ -4,7 +4,8 @@ namespace app.widgets.icone {
 
         public bindings:{ [binding:string]:string} = {
             image: '@',
-            legende: '@'
+            legende: '@',
+            sousmenus: "="
         };
         public controller:Function = IconeCtrl;
         public controllerAs:string = 'vm';

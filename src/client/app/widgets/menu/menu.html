@@ -1,9 +1,9 @@
 <nav id="menu">
     <ul>
-        <li><a ng-href="#/sorties"><icone image="fa fa-home fa-4x" legende="Accueil"></icone></a></li>
-        <li><a ng-href="#/sorties"><icone image="fa fa-calendar fa-4x" legende="Evenements"></icone></a></li>
-        <li><a ng-href="#/users/1"><icone image="fa fa-users fa-4x" legende="Membres"></icone></a></li>
-        <li><a ng-href="#/users/1"><icone image="fa fa-cog fa-4x" legende="Mon compte"></icone></a></li>
-        <li><a ng-href="#/users/1"><icone image="fa fa-power-off fa-4x" legende="Déconnexion"></icone></a></li>
+        <li><icone menu="{'lien':'#/sorties','image':'fa fa-home fa-4x','legende':'Accueil', 'sousmenus': [{'lien':'test','libelle':'test'}]}" image="fa fa-home fa-4x" legende="Accueil" sousmenus="[{'lien':'test','libelle':'test'}]"></icone></li>
+        <li><icone image="fa fa-calendar fa-4x" legende="Evenements"></icone></li>
+        <li><icone image="fa fa-users fa-4x" legende="Membres"></icone></li>
+        <li><icone image="fa fa-cog fa-4x" legende="Mon compte"></icone></li>
+        <li><icone image="fa fa-power-off fa-4x" legende="Déconnexion"></icone></li>
     </ul>
 </nav>

@@ -1,9 +1,14 @@
-<div class="icone">
-    <div class="icone_image">
-        <i class="{{vm.image}}" aria-hidden="true"></i>
-        <!-- <img src="{{vm.image}}" alt="{{vm.legende}}"/> -->
+<a ng-href="">
+    <div class="icone">
+        <div class="icone_image">
+            <i class="{{vm.menu.image}}" aria-hidden="true"></i>
+            <!-- <img src="{{vm.image}}" alt="{{vm.legende}}"/> -->
+        </div>
+        <div class="icone_legende">
+            {{vm.menu.legende}}
+        </div>
+        <div class="sousMenu">
+            <a ng-repeat="sousMenu in vm.menu.sousmenus" href="{{sousMenu.lien}}">{{sousMenu.libelle}}</a>
+        </div>
     </div>
-    <div class="icone_legende">
-         {{vm.legende}}
-    </div>
-</div>
+</a>

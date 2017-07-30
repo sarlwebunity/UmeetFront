@@ -1,12 +1,14 @@
 .icone {
-  width:100%;
+  width:90px;
   height: 80px;
   display: flex;
   flex-direction: column;
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
+  position: relative;
 
+  
   .icone_image {
     width:100%;
     height: 60px;
@@ -18,4 +20,33 @@
     text-align: center;
     font-size: small;
   }
+
+  .sousMenu {
+    position: absolute;
+    top: 0px;
+    left:90px;
+    
+    width: 0;
+    min-width: 0px;
+    overflow: hidden;
+    transition: min-width 0.5s;
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgba(51, 102, 140, 1);
+
+    a {
+      display: block;
+      width: 100%;
+      height: 25px !important;
+      color: white;
+    }
+  }
 }
+
+.icone:hover{
+    .sousMenu{
+      min-width: 100px;
+    }
+  }
